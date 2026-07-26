@@ -106,12 +106,12 @@ button:focus-visible { outline-color:#8fdcff; }
 .bouquet .flower { z-index:5; }.bouquet .flower--back { z-index:3; }.bouquet .flower--front { z-index:7; }
 .nameOnlyCard { min-height:150px; display:grid; place-items:center; text-align:center; }
 .nameOnlyCard h2 { margin:0; max-width:85%; font-size:clamp(30px,8vw,43px); line-height:1; }
-.gengarWatcher { position:absolute; z-index:4; right:21%; top:25%; width:clamp(78px,14vw,132px); pointer-events:none; transform:rotate(-5deg); transform-origin:50% 100%; animation:gengarArrive 1.2s 1.15s cubic-bezier(.18,.78,.2,1) both,gengarPeek 4.5s 2.4s ease-in-out infinite alternate; }
-.gengarWatcher img { position:relative; z-index:2; display:block; width:100%; height:auto; filter:drop-shadow(-5px 8px 12px rgba(0,0,0,.65)) drop-shadow(0 0 7px rgba(92,77,190,.32)); }
+.gengarWatcher { position:absolute; z-index:2; right:23%; top:30%; width:clamp(72px,12vw,112px); pointer-events:none; transform:rotate(-11deg); transform-origin:50% 100%; clip-path:inset(0 0 27% 0); animation:gengarArrive 1.2s 1.15s cubic-bezier(.18,.78,.2,1) both,gengarPeek 4.5s 2.4s ease-in-out infinite alternate; }
+.gengarWatcher img { position:relative; z-index:2; display:block; width:100%; height:auto; opacity:.88; filter:drop-shadow(-5px 8px 12px rgba(0,0,0,.65)) drop-shadow(0 0 7px rgba(92,77,190,.28)); }
 .gengarAura { position:absolute; z-index:1; inset:10%; border-radius:50%; background:radial-gradient(circle,rgba(82,70,178,.18),transparent 68%); filter:blur(8px); }
-@keyframes gengarArrive { from{opacity:0;transform:translateY(24px) rotate(2deg) scale(.72);filter:blur(5px)} }
-@keyframes gengarPeek { to{transform:translateY(-5px) rotate(-7deg)} }
+@keyframes gengarArrive { from{opacity:0;transform:translateY(28px) rotate(-4deg) scale(.7);filter:blur(5px)} }
+@keyframes gengarPeek { to{transform:translateY(-4px) rotate(-13deg)} }
 @keyframes bouquetArrive { from{opacity:0;transform:translateY(10%) scale(.88);filter:blur(8px)} }
 @media (min-width:700px) { .gardenScene { width:min(78vw,960px); left:50%; transform:translateX(-50%); }.discoveryHeader { top:34px; }.messagePanel { bottom:10%; }.moon { top:-14%; }.finalCopy { top:12%; } }
-@media (max-width:480px) { .sound span:last-child{display:none}.flower { width:120px;height:245px}.flower--back{opacity:.44}.holdHint{display:none}.messagePanel p{font-size:19px}.finalFlower{width:86vw;height:70vh}.finalCopy{top:13%}.finalCopy p{font-size:18px}.gengarWatcher{right:18%;top:26%;width:84px;opacity:.92} }
+@media (max-width:480px) { .sound span:last-child{display:none}.flower { width:120px;height:245px}.flower--back{opacity:.44}.holdHint{display:none}.messagePanel p{font-size:19px}.finalFlower{width:86vw;height:70vh}.finalCopy{top:13%}.finalCopy p{font-size:18px}.gengarWatcher{right:21%;top:31%;width:74px} }
 @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; animation-delay:0ms!important; animation-iteration-count:1!important; scroll-behavior:auto!important; }.mist,.ash i,.grain,.flowerHit{animation:none!important}.ash i:nth-child(n+7){display:none}.introScene,.gardenScene,.finalScene,.closingScene{transition-duration:.2s}.flower{opacity:1}.finalCopy p{opacity:1} }
