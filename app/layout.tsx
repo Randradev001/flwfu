@@ -3,8 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Linda Fran 🦋",
-  description: "Gracias por la conversación.",
-  openGraph: { title: "Linda Fran 🦋", siteName: "Linda Fran 🦋", description: "Gracias por la conversación.", type: "website" },
+  description: "Gracias por estar.",
+  openGraph: { title: "Linda Fran 🦋", siteName: "Linda Fran 🦋", description: "Gracias por estar.", type: "website" },
   themeColor: "#050305",
   icons: { icon: "/favicon.svg" },
 };
