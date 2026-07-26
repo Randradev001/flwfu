@@ -116,6 +116,7 @@ export default function Home() {
         <div className="bouquetPaper bouquetPaperFront" aria-hidden="true"><span className="paperFold"/></div>
         <div className="bouquetTie" aria-hidden="true"><i/><b/><span/></div>
       </div>
+      <div className="gengarWatcher" aria-hidden="true"><div className="gengarAura"/><img src="/gengar.png" alt="" /></div>
       <div className="discoveryHeader"><p className="franMark">{complete ? "El jardín lo recuerda." : <><BlueButterfly/><span>Fran SC</span></>}</p><b>{String(found.length).padStart(2,"0")} / 05</b></div>
       {active !== null && <aside className="messagePanel" key={active}><p>“{experience.gardenMessage}”</p></aside>}
       <p className="holdHint">Pon tu dedo en la flor.</p>

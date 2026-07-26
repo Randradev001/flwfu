@@ -106,7 +106,12 @@ button:focus-visible { outline-color:#8fdcff; }
 .bouquet .flower { z-index:5; }.bouquet .flower--back { z-index:3; }.bouquet .flower--front { z-index:7; }
 .nameOnlyCard { min-height:150px; display:grid; place-items:center; text-align:center; }
 .nameOnlyCard h2 { margin:0; max-width:85%; font-size:clamp(30px,8vw,43px); line-height:1; }
+.gengarWatcher { position:absolute; z-index:8; right:clamp(-24px,2vw,34px); bottom:1%; width:clamp(118px,22vw,230px); pointer-events:none; transform:rotate(-7deg); transform-origin:50% 100%; animation:gengarArrive 1.2s 1.4s cubic-bezier(.18,.78,.2,1) both,gengarHover 4.5s 2.6s ease-in-out infinite alternate; }
+.gengarWatcher img { position:relative; z-index:2; display:block; width:100%; height:auto; filter:drop-shadow(-8px 14px 18px rgba(0,0,0,.62)) drop-shadow(0 0 9px rgba(92,77,190,.35)); }
+.gengarAura { position:absolute; z-index:1; inset:12% 5% 5%; border-radius:50%; background:radial-gradient(circle,rgba(82,70,178,.2),transparent 68%); filter:blur(9px); }
+@keyframes gengarArrive { from{opacity:0;transform:translate(25%,16%) rotate(4deg) scale(.72);filter:blur(6px)} }
+@keyframes gengarHover { to{transform:translateY(-6px) rotate(-9deg)} }
 @keyframes bouquetArrive { from{opacity:0;transform:translateY(10%) scale(.88);filter:blur(8px)} }
 @media (min-width:700px) { .gardenScene { width:min(78vw,960px); left:50%; transform:translateX(-50%); }.discoveryHeader { top:34px; }.messagePanel { bottom:10%; }.moon { top:-14%; }.finalCopy { top:12%; } }
-@media (max-width:480px) { .sound span:last-child{display:none}.flower { width:120px;height:245px}.flower--back{opacity:.44}.holdHint{display:none}.messagePanel p{font-size:19px}.finalFlower{width:86vw;height:70vh}.finalCopy{top:13%}.finalCopy p{font-size:18px} }
+@media (max-width:480px) { .sound span:last-child{display:none}.flower { width:120px;height:245px}.flower--back{opacity:.44}.holdHint{display:none}.messagePanel p{font-size:19px}.finalFlower{width:86vw;height:70vh}.finalCopy{top:13%}.finalCopy p{font-size:18px}.gengarWatcher{right:-18px;bottom:4%;width:128px;opacity:.9} }
 @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; animation-delay:0ms!important; animation-iteration-count:1!important; scroll-behavior:auto!important; }.mist,.ash i,.grain,.flowerHit{animation:none!important}.ash i:nth-child(n+7){display:none}.introScene,.gardenScene,.finalScene,.closingScene{transition-duration:.2s}.flower{opacity:1}.finalCopy p{opacity:1} }
